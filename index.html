@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amith Thomas - Data Analyst Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #0a0547; /* deep purple-blue */
+      --accent-color: #000000;  /* teal */
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      overflow-x: hidden;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    section {
+      margin: 2rem 0;
+      animation: slideUp 1s ease forwards;
+    }
+
+    h1, h2 {
+      color: var(--primary-color);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: var(--accent-color);
+      color: white;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    ul li:hover {
+      transform: translateY(-5px);
+      background: #00b89f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--primary-color);
+      color: white;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      0% {transform: translateY(-100%);}
+      100% {transform: translateY(0);}
+    }
+
+    @keyframes slideUp {
+      0% {transform: translateY(100px); opacity: 0;}
+      100% {transform: translateY(0); opacity: 1;}
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Amith Thomas</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Results-oriented and competent Data Analyst with a strong academic background in Business Analytics and over two years' experience in data analysis, MIS, and Informatics. Skilled at requirement gathering, exploratory data analysis, creating visualizations, and statistical analysis. Proficient in SQL, Power BI, Excel, R, and Python to drive data-driven decisions. Seeking a Data Analyst role to optimize business processes and drive impactful insights.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Key Skills</h2>
+    <ul>
+       <li> <br><strong>Data Analysis & Visualization:</strong> Power BI (DAX, Active Dashboards), SQL, Python (Pandas, Scikit Learn, NLP, Webscraping), R, Excel (VBA, Macros, Pivot Tables), Google Sheets
+      <br><br><strong>Business Intelligence:</strong> Business Object, SSRS, Report Builder
+      <br><br><strong>Data Management & Reporting:</strong> SSMS, MySQL, MS Access, Power Automate, Power Apps, Power Virtual Agents
+      <br><br><strong>Project Management:</strong> Agile SCRUM, SDLC, Requirements Gathering
+      <br><br><strong>Tools:</strong> Microsoft Office Suite (Word, PowerPoint, SharePoint), Google Slides, Html, CSS</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li><strong>Information Analyst</strong> — Great Western Hospitals NHS Foundation Trust (Oct 2023 - Present)
+        <ul>
+            <li>• Automated daily, weekly, and monthly reporting using SQL, VBA, and Power BI, reducing manual reporting by 30%.
+                <br><br>• Created ad hoc SQL/Excel reports, optimizing resource allocation and reducing operational costs by 10%.
+                <br><br>• Developed Power BI dashboards (DAX) for the Diagnostic Department, increasing performance monitoring efficiency by 20%.
+                <br><br>• Collaborated with teams to implement tailored reporting solutions.</li>
+        </ul>
+      </li>
+
+      <li><strong>Information Services Analyst</strong> — Fareham College (Mar 2023 - Sep 2023)
+        <ul>
+          <li>• Ensured data accuracy, supporting student enrolment processes.
+          <br><br>• Used advanced SQL in SSMS and SSRS to generate critical reports.
+          <br><br>• Built dynamic Power BI dashboards for KPIs and strategic data points.
+          <br><br>• Transformed raw data into actionable insights ensuring data integrity.</li>
+        </ul>
+      </li>
+
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Technical Projects & Achievements</h2>
+    <ul>
+      <li><strong>Emergency Department (ED) Attendance Analysis:</strong> Built an SQL solution analyzing attendance patterns, aiding resource optimization.</li>
+      <li><strong>Forecasting ED Attendance:</strong> Created a Python-based forecasting model using Prophet to predict ED attendance trends.</li>
+      <li><strong>Automated Data Refresh for Finance Application:</strong> Automated SSMS table refreshes at Fareham College ensuring real-time financial accuracy.</li>
+    </ul>
+  
+    <h2>GitHub Projects</h2>
+    <ul>
+        <li>
+          <a href="https://github.com/amiththomas06/FootballAnalysis" 
+             target="_blank" 
+             style="color: white; text-decoration: none;">
+            <strong>Premier League Team Stats Analyzer</strong> — A Python-based tool to analyze a football (soccer) team's performance in the Premier League using detailed match statistics, goal timing data, and visualizations.
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/amiththomas06/YoutubeWordFreqAnalysis" 
+             target="_blank" 
+             style="color: white; text-decoration: none;">
+            <strong>Analysis of Top Trending YouTube Videos (Titles) Across Different Countries</strong> — The goal of this project is to analyze the titles of the top trending YouTube videos across different countries using Google translator, NLP and WordCloud
+          </a>
+        </li>
+      </ul>
+      
+  </section>
+  
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 Southampton, United Kingdom</p>
+    <p>📞 Mobile: 07825126646</p>
+    <p>📧 <a href="mailto:amiththomas06@gmail.com" style="color: var(--accent-color);">amiththomas06@gmail.com</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/amith-thomas" target="_blank" style="color: var(--accent-color);">LinkedIn Profile</a></p>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2025 Amith Thomas.</p>
+</footer>
+
+</body>
+</html>
